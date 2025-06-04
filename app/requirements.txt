@@ -1,0 +1,4 @@
+Flask
+vaderSentiment
+google-cloud-bigquery
+python-dotenv
