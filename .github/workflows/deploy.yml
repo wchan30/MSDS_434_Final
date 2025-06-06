@@ -3,7 +3,6 @@ name: Deploy to Cloud Run
 on:
   push:
     branches: [main]  
-Add commentMore actions
 jobs:
   deploy:
     runs-on: ubuntu-latest
