@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from google.cloud import bigquery
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
 app = Flask(__name__)
@@ -49,5 +50,6 @@ def predict_intraday():
 
     return jsonify(prediction)
 
-if __name__ == '__main__':
-    app.run(host = '0.0.0.0', port = 8080, debug = True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+
