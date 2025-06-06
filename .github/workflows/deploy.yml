@@ -21,7 +21,7 @@ jobs:
 
     - name: Build and Push Docker image to GCR
       run: |
-        gcloud builds submit --tag gcr.io/willbigquery/financial-news-ml
+        gcloud builds submit. --tag gcr.io/willbigquery/financial-news-ml
 
     - name: Deploy to Cloud Run
       run: |
